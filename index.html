@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="logo"><img src="./assets/logo.png" alt="logo" /></div>
+        <div class="nav-menu">
+          <ul id="nav-menu-ul">
+            <li class="active">
+              <a href="#home" onclick="eventHandler(event)">Home</a>
+            </li>
+            <li><a href="#Core"  onclick="eventHandler(event)">Core Features</a></li>
+            <li><a href="#Team" onclick="eventHandler(event)">Our Team</a></li>
+            <li><a href="#Pricing" onclick="eventHandler(event)">Pricing</a></li>
+            <li><a href="#FAQS" onclick="eventHandler(event)">FAQS</a></li>
+          </ul>
+          <button>Try for free</button>
+          <div
+            class="ham_menu ham_open"
+            id="ham_menu"
+            onclick="menuHandler(event)"
+          ></div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="home_section" id="home">
+        <div class="container">
+          <div class="home_section_top">
+            <h1 class="global_heading">Take your expenses under control</h1>
+            <p class="global_subheading">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium sequi id maiores fugit saepe est dolores nihil magni
+              ut totam tempora blanditiis aut aliquam voluptates, optio eius?
+            </p>
+          </div>
+          <div class="home_section_middle">
+            <input class="global_input" type="email" placeholder="Your email" />
+            <button class="global_button">Join the waitlist</button>
+          </div>
+          <div class="home_section_bottom">
+            <img src="./assets/hero-section-img..png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="features_section" id="Core">
+        <div class="container">
+          <div class="core_features">
+            <h1 class="heading">Our core features</h1>
+            <p class="global_subheading">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur nisi officia ratione placeat error quisquam aliquid?
+              Sunt dolorem unde quo assumenda. Voluptatibus minima doloribus.
+            </p>
+            <button class="global_button">Try for free</button>
+          </div>
+          <div class="cards">
+            <div class="cards_box">
+              <img src="./assets/checkout.svg" alt="" />
+              <h1>Checkout</h1>
+              <p>
+                Congue in in convallis tortor, interdum consectetur sagittis.
+                Ipsum morbi eu.
+              </p>
+            </div>
+            <div class="cards_box">
+              <img src="./assets/payments.svg" alt="" />
+              <h1>Payments</h1>
+              <p>
+                Congue in in convallis tortor, interdum consectetur sagittis.
+                Ipsum morbi eu.
+              </p>
+            </div>
+            <div class="cards_box">
+              <img src="./assets/subscriptions.svg" alt="" />
+              <h1>Subscriptions</h1>
+              <p>
+                Congue in in convallis tortor, interdum consectetur sagittis.
+                Ipsum morbi eu.
+              </p>
+            </div>
+            <div class="cards_box">
+              <img src="./assets/tax.svg" alt="" />
+              <h1>Tax compliance</h1>
+              <p>
+                Congue in in convallis tortor, interdum consectetur sagittis.
+                Ipsum morbi eu.
+              </p>
+            </div>
+          </div>
+      </section>
+      <section class="revenue">
+        <div class="container">
+         <img src="/assets/revenue.png" alt="">
+         <div class="revenue_description">
+          <h1 class="heading">Increase Revenue up to 60%</h1>
+          <p class="global_subheading">Vitae, faucibus viverra nullam ridiculus. Dolor nunc, tortor pellentesque eleifend. Nam mauris gravida sit vitae consectetur mattis. Morbi sed sit habitant metus commodo, turpis. Rhoncus et.</p>
+         </div>
+        </div>
+      </section>
+      <section class="team_section" id="Team">
+        <div class="container">
+          <div class="team_top">
+            <h1 class="heading">Team</h1>
+            <p class="global_subheading">Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat scelerisque in elit. Morbi rhoncus, tellus, eros consequat magna semper orci a tincidunt.</p>
+          </div>
+           <div class="team_bottom">
+            <div class="team_card">
+              <img src="./assets/Founder.jpg" alt="Founder">
+              <div class="overlay">
+                <div class="team_details">
+                  <h1>Jayant Sharma</h1>
+                  <p>Founder</p>
+                </div>
+              </div>
+            </div>
+            <div class="team_card">
+              <img src="./assets/Design.jpg" alt="Design">
+              <div class="overlay">
+                <div class="team_details">
+                  <h1>Deepak Roy</h1>
+                  <p>Design Team Lead</p>
+                </div>
+              </div>
+            </div>
+            <div class="team_card">
+              <img src="./assets/Marketing.jpg" alt="Marketing">
+              <div class="overlay">
+                <div class="team_details">
+                  <h1>Parul Tiwari</h1>
+                  <p>Marketing Lead</p>
+                </div>
+              </div>
+            </div>
+            <div class="team_card">
+              <img src="./assets/FrontEnd.jpg" alt="FrontEnd">
+              <div class="overlay">
+                <div class="team_details">
+                  <h1>Swati Shukla</h1>
+                  <p>Front End Team Lead</p>
+                </div>
+              </div>
+            </div>
+           </div>
+        </div>
+      </section>
+      <section class="proud_section">
+        <div class="container">
+          <div class="proud_top">
+            <h1 class="heading">
+              What We Proud Of
+            </h1>
+            <p class="global_subheading">
+              Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat scelerisque in elit. Morbi rhoncus, tellus, eros consequat magna semper orci a tincidunt.
+            </p>
+          </div>
+          <div class="proud_bottom">
+            <div class="proud_bottom_details">
+              <h1>99.99%</h1>
+              <p>Uptime</p>
+            </div>
+            <div class="proud_bottom_details">
+              <h1>16x</h1>
+              <p>Faster than competitors</p>
+            </div>
+            <div class="proud_bottom_details">
+              <h1>+30%</h1>
+              <p>Revenue in first month</p>
+            </div>
+            <div class="proud_bottom_details">
+              <h1>5 stars</h1>
+              <p>Rating from customers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="money_section">
+        <div class="container">
+            <h1 class="heading">Let’s save your money today</h1>
+            <p class="global_subheading">Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat scelerisque in elit. Morbi rhoncus, tellus, eros consequat magna semper orci a tincidunt.</p>
+            <div class="money_save_box">
+              <input class="global_input" type="email" placeholder="Your email" />
+            <button class="global_button">Subscribe</button>
+            </div>
+        </div>
+      </section>
+      <section class="pricing_section" id="Pricing">
+        <div class="container">
+          <div class="pricing_top">
+            <h1 class="heading">Pricing</h1>
+            <p class="global_subheading">Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat scelerisque in elit. Morbi rhoncus, tellus, eros consequat magna semper orci a tincidunt.</p>
+          </div>
+          <div class="pricing_bottom">
+            <div class="pricing_bottom_top" id="pricing_bottom_top">
+              <span id="month" class="active" onclick="pricing(event)">Monthly</span>
+              <span id="year" onclick="pricing(event)">Yearly</span>
+            </div>
+            <div class="pricing_bottom_card">
+            <div class="pricing_card">
+              <div class="pricing_card_top">
+                <h1 class="heading">Lite Plan</h1>
+                <p class="global_subheading">Mi sit amet maecenas augue</p>
+              </div>
+              <hr>
+              <ul>
+                <li><img src="./assets/tick.png" alt=""> 3 users in workspace</li>
+                <li><img src="./assets/tick.png" alt=""> Workflow automations</li>
+                <li><img src="./assets/tick.png" alt=""> Monthly Billing</li>
+                <li><img src="./assets/tick.png" alt=""> Collaborative work</li>
+                <li><img src="./assets/tick.png" alt=""> 10 GB in cloud storage</li>
+              </ul>
+              <hr>
+              <span class="pricing_details1"><h1>$24</h1><h3>/mo</h3></span>
+              <button class="global_button pricing_button">Get Started</button>
+            </div>
+            <div class="pricing_card pricing_card_basic">
+              <div class="pricing_card_top">
+                <h1 class="heading">Basic Plan</h1>
+                <p class="global_subheading">Mi sit amet maecenas augue</p>
+              </div>
+              <hr>
+              <ul>
+                <li><img src="./assets/tick.png" alt=""> 5 users in workspace</li>
+                <li><img src="./assets/tick.png" alt=""> Workflow automations</li>
+                <li><img src="./assets/tick.png" alt=""> Weekly Billing</li>
+                <li><img src="./assets/tick.png" alt=""> Collaborative work</li>
+                <li><img src="./assets/tick.png" alt=""> 15 GB in cloud storage</li>
+              </ul>
+              <hr>
+              <span class="pricing_details2"><h1>$32</h1><h3>/mo</h3></span>
+              <button class="global_button">Get Started</button>
+            </div>
+            <div class="pricing_card">
+              <div class="pricing_card_top">
+                <h1 class="heading">Pro Plan</h1>
+                <p class="global_subheading">Mi sit amet maecenas augue</p>
+              </div>
+              <hr>
+              <ul>
+                <li><img src="./assets/tick.png" alt=""> 7 users in workspace</li>
+                <li><img src="./assets/tick.png" alt=""> Workflow automations</li>
+                <li><img src="./assets/tick.png" alt=""> Daily Billing</li>
+                <li><img src="./assets/tick.png" alt=""> Collaborative work</li>
+                <li><img src="./assets/tick.png" alt=""> 20 GB in cloud storage</li>
+              </ul>
+              <hr>
+              <span class="pricing_details3"><h1>$40</h1><h3>/mo</h3></span>
+              <button class="global_button pricing_button">Get Started</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq_section" id="FAQS">
+        <div class="container">
+          <h1 class="heading">Frequently Asked Questions</h1>
+          <div class="faq_wapper">
+          <div class="faq_left">
+          <div class="faq">
+            <button class="faq_button" onclick="faqFun(event)">
+              How much costs your services?
+            </button>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat..
+              </p>
+          </div>
+          <div class="faq">
+            <button class="faq_button" onclick="faqFun(event)">
+              How will you help me?
+            </button>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+              </p>
+          </div>
+          <div class="faq">
+            <button class="faq_button" onclick="faqFun(event)">
+              What is your workflow?
+            </button>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius . Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+              </p>
+          </div>
+          <div class="faq">
+            <button class="faq_button" onclick="faqFun(event)">
+              Which services do you provide?
+            </button>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.
+              </p>
+          </div>
+          <div class="faq">
+            <button class="faq_button" onclick="faqFun(event)">
+              How can I build my brand without a lot of money?
+            </button>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+              </p>
+          </div>
+        </div>
+        <div class="faq_right">
+          <div class="faq">
+            <button class="faq_button" onclick="faqFun(event)">
+              Which services do you provide?
+            </button>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+          </div>
+          <div class="faq">
+            <button class="faq_button" onclick="faqFun(event)">
+              How can I build my brand without a lot of money?
+            </button>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+              </p>
+          </div>
+          <div class="faq">
+            <button class="faq_button" onclick="faqFun(event)">
+              What should I do after applying form?
+            </button>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+              </p>
+          </div>
+          <div class="faq">
+            <button class="faq_button" onclick="faqFun(event)">
+              How much costs your services?
+            </button>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros . Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+              </p>
+          </div>
+          <div class="faq">
+            <button class="faq_button" onclick="faqFun(event)">
+              How will you help me?
+            </button>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+              </p>
+          </div>
+        </div>
+      </div>
+        </div>
+      </section>
+      <section class="superpower_section">
+        <div class="container">
+          <h1 class="heading">Ready to superpower your business?</h1>
+          <button class="global_button">Get started for free</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer_top">
+          <img class="" src="./assets/logo.png" alt="">
+          <ul class="footer_link">
+            <li><a href=""><img src="./assets/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="./assets/pinterest.png" alt=""></a></li>
+            <li><a href=""><img src="./assets/linkedin.png" alt=""></a></li>
+            <li><a href=""><img src="./assets/twitter.png" alt=""></a></li>
+            <li><a href=""><img src="./assets/instagram.png" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="footer_bottom">
+          <span>Terms & Conditions</span>
+          <span>License & Changelog</span>
+          <span>Styleguide</span>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
